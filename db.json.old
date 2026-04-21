@@ -3,21 +3,21 @@
     {
       "id": 1,
       "email": "amanda@learn.com",
-      "password": "$2b$10$PMNhFJFeXjNdbr7BtfJxTOonaBmUrilNOYZzhOBS0ikuoVhIqk/ci",
+      "password": "password0",
       "name": "amanda",
       "age": 33
     },
     {
       "id": 2,
       "email": "john@learn.com",
-      "password": "$2b$10$F7T/lVgcS/.W0xECEBib1egDLqeJsWJytcpNjSVqriAlZx3drW4n2",
+      "password": "password1",
       "name": "John",
       "age": 40
     },
     {
       "id": 3,
       "email": "james@learn.com",
-      "password": "$2b$10$hvVRgvPDGMqAm5ABOfOey.pNa2oAmpBk35/CtxaYoVU8gWSS.MdD2",
+      "password": "password2",
       "name": "James",
       "age": 40
     }
@@ -37,11 +37,6 @@
       "id": 3,
       "level": "high",
       "userId": 1
-    },
-    {
-      "level": "test",
-      "userId": 3,
-      "id": 4
     }
   ],
   "roles": [
@@ -58,6 +53,13 @@
       "targetUserId": 2,
       "permissionId": 2,
       "userId": 1
+    },
+    {
+      "id": 3,
+      "role": "qa analyst",
+      "targetUserId": 3,
+      "permissionId": 1,
+      "userId": 1
     }
   ],
   "messages": [
@@ -73,7 +75,7 @@
     },
     {
       "id": 3,
-      "body": "bye",
+      "body": "bye",     
       "userId": 3
     },
     {

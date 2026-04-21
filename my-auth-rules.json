@@ -1,0 +1,6 @@
+{
+  "permissions": 600,
+  "roles": 640,
+  "messages": 640,
+  "bulletins": 444
+}

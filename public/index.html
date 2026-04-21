@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JSON Server</title>
+</head>
+
+<body>
+
+    <h1>Data is running!</h1>
+
+    <p>Check your API endpoints at the terminal URL.</p>
+
+    <div id="message-list"></div>
+
+<script>
+
+function displayMessages(data) {
+//    console.log(data)
+    const list = document.getElementById('message-list');
+    data.forEach(msg => {
+        const item = document.createElement('li');
+        item.textContent = msg.body;
+        list.appendChild(item);
+    });
+}
+
+
+  // This ensures the script waits for the page to be ready
+  document.addEventListener('DOMContentLoaded', () => {
+    
+    console.log("Page ready, starting fetch...");
+
+    fetch('/messages')
+      .then(response => {
+        // If your server returns a 404 or 500, fetch won't "fail" (catch)
+        // so we check the response.ok property manually.
+        if (!response.ok) {
+          throw new Error(`Server responded with status: ${response.status}`);
+        }
+        return response.json();
+      })
+      .then(data => {
+        console.log("Success! Received data:", data);
+        // Do something with the data here, like updating a <div>
+        displayMessages(data)
+      })
+      .catch(error => {
+        console.error("Fetch failed:", error);
+      });
+  });
+</script>
+
+</body>
+
+</html>
