@@ -1,6 +1,6 @@
-{
-  "/": "/444/messages",
-  "/users*": "/600/users$1",
-  "/roles*": "/640/roles$1",
-  "/messages*": "/664/roles$1"
+{{
+  "users": 600,
+  "roles": 640,
+  "messages": 640,
+  "secrets": 600
 }
