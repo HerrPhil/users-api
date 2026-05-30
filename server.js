@@ -6,9 +6,13 @@ const server = jsonServer.create();
 const router = jsonServer.router('db.json');
 const middlewares = jsonServer.defaults();
 // Explicitly load the rules file
-const rules = auth.rewriter(require(path.join(__dirname, 'my-auth-rules.json')));
+const rule_contents = require(path.join(__dirname, 'my-auth-rules.json'));
+console.log("Loading custom routes:", Object.keys(rule_contents));
+const rules = auth.rewriter(rule_contents);
 
 server.db = router.db
+
+
 server.use(middlewares); // Loads defaults first (Logger, CORS, JSON parser)
 
 // Note:

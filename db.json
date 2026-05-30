@@ -48,7 +48,7 @@
     {
       "id": 1,
       "role": "System Administrator",
-      "targertUserId": 1,
+      "targetUserId": 1,
       "permissionId": 3,
       "userId": 1
     },
@@ -57,6 +57,13 @@
       "role": "developer",
       "targetUserId": 2,
       "permissionId": 2,
+      "userId": 1
+    },
+    {
+      "id": 3,
+      "role": "developer",
+      "targetUserId": 3,
+      "permissionId": 3,
       "userId": 1
     }
   ],

@@ -1,6 +1,8 @@
 {
   "permissions": 600,
+  "/roles/targetUserId/:targetUserId": "/roles?targetUserId=:targetUserId",
   "roles": 640,
+  "/messages/userId/:userId": "/messages?userId=:userId",
   "messages": 640,
   "bulletins": 444
 }
