@@ -1,5 +1,5 @@
 {
-  "permissions": 600,
+  "permissions": 640,
   "/roles/targetUserId/:targetUserId": "/roles?targetUserId=:targetUserId",
   "roles": 640,
   "/messages/userId/:userId": "/messages?userId=:userId",
