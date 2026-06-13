@@ -3,102 +3,225 @@
     {
       "id": 1,
       "email": "amanda@learn.com",
-      "password": "password0",
+      "password": "$2b$10$PMNhFJFeXjNdbr7BtfJxTOonaBmUrilNOYZzhOBS0ikuoVhIqk/ci",
       "name": "amanda",
-      "age": 33
+      "age": 23
     },
     {
       "id": 2,
-      "email": "john@learn.com",
-      "password": "password1",
-      "name": "John",
-      "age": 40
+      "email": "june@learn.com",
+      "password": "$2b$10$8R2aFlEz4Tmk/wUWlcMZcOr7/gRVDispg6l5ffAIudikCR0uP/xBi",
+      "name": "june",
+      "age": 34
     },
     {
       "id": 3,
+      "email": "john@learn.com",
+      "password": "$2b$10$hvVRgvPDGMqAm5ABOfOey.pNa2oAmpBk35/CtxaYoVU8gWSS.MdD2",
+      "name": "John",
+      "age": 45
+    },
+    {
+      "id": 4,
       "email": "james@learn.com",
-      "password": "password2",
+      "password": "$2b$10$xo7tWVmndqWVl1ggDiZgT./ApLi2oqa/vPa4JU5AeMSfNQiusdQ8i",
       "name": "James",
-      "age": 40
+      "age": 54
     }
   ],
   "permissions": [
     {
       "id": 1,
-      "level": "low",
+      "task": "create user",
       "userId": 1
     },
-    {
+    { 
       "id": 2,
-      "level": "medium",
+      "task": "delete user",
+      "userId": 1
+    },
+    { 
+      "id": 3,
+      "task": "create permission",
       "userId": 1
     },
     {
-      "id": 3,
-      "level": "high",
+      "id": 4,
+      "task": "delete permission",
+      "userId": 1
+    },
+    {
+      "id": 5,
+      "task": "create role",
+      "userId": 1
+    },
+    { 
+      "id": 6,
+      "task": "assign role",
+      "userId": 1
+    },
+    {      
+      "id": 7,
+      "task": "revoke role",
+      "userId": 1
+    },
+    { 
+      "id": 8,
+      "task": "delete role",
+      "userId": 1
+    },
+    {
+      "id": 9,
+      "task": "write code",
+      "userId": 1
+    },
+    {
+      "id": 10,
+      "task": "test code",
+      "userId": 1
+    },
+    { 
+      "id": 11,
+      "task": "review code",
+      "userId": 1
+    },
+    { 
+      "id": 12,
+      "task": "deploy code",
+      "userId": 1
+    },
+    {
+      "id": 13,
+      "task": "certify build",
       "userId": 1
     }
   ],
   "roles": [
     {
       "id": 1,
-      "role": "System Administrator",
-      "targertUserId": 1,
-      "permissionId": 3,
+      "name": "System Administrator",
+      "targetUserId": 1,
+      "permissions": [1,2,3,4,5,6,7,8],
       "userId": 1
     },
     {
-      "id": 2,
-      "role": "developer",
+      "id": 2,   
+      "name": "Tech Lead",
       "targetUserId": 2,
-      "permissionId": 2,
+      "permissions": [12],
       "userId": 1
     },
     {
-      "id": 3,
-      "role": "qa analyst",
+      "id": 3,   
+      "name": "Senior Developer",
+      "targetUserId": 2,
+      "permissions": [9,10,11],
+      "userId": 1
+    },
+    {
+      "id": 4,
+      "name": "Developer",
       "targetUserId": 3,
-      "permissionId": 1,
+      "permissions": [9,10],
+      "userId": 1
+    },
+    {
+      "id": 5,
+      "name": "QA Tester",
+      "targetUserId": 4,
+      "permissions": [10,13],
       "userId": 1
     }
   ],
   "messages": [
     {
       "id": 1,
-      "body": "hi",
+      "body": "message #1 to system administrator",
+      "read": true,
       "userId": 1
     },
     {
       "id": 2,
-      "body": "hey",
-      "userId": 2
+      "body": "message #2 to system administrator",
+      "read": false,
+      "userId": 1
     },
     {
-      "id": 3,
-      "body": "bye",     
-      "userId": 3
+      "id": 3,     
+      "body": "message #3 to system administrator",
+      "read": true,
+      "userId": 1
     },
     {
       "id": 4,
-      "body": "farewell",
+      "body": "message #1 to tech lead",
+      "read": false,
+      "userId": 2
+    },
+    {
+      "id": 5,
+      "body": "message #2 to tech lead",
+      "read": true,
+      "userId": 2
+    },
+    {
+      "id": 6,
+      "body": "message #3 to tech lead",
+      "read": false,
+      "userId": 2
+    },
+    {
+      "id": 7,
+      "body": "message #1 to developer",
+      "read": true,
       "userId": 3
+    },
+    {
+      "id": 8,
+      "body": "message #2 to developer",
+      "read": false,
+      "userId": 3
+    },
+    {
+      "id": 9,
+      "body": "message #3 to developer",
+      "read": true,
+      "userId": 3
+    },
+    {
+      "id": 10,
+      "body": "message #1 to qa tester",
+      "read": false,
+      "userId": 4
+    },
+    {
+      "id": 11,
+      "body": "message #2 to qa tester",
+      "read": true,
+      "userId": 4
+    },
+    {
+      "id": 12,
+      "body": "message #3 to qa tester",
+      "read": false,
+      "userId": 4
     }
   ],
   "bulletins": [
     {
       "id": 1,
       "userId": 1,
-      "statement": "this is a new notice"
+      "post": "this is a new notice"
     },
     {
       "id": 2,
       "userId": 1,
-      "statement": "this is another notice"
+      "post": "this is another notice"
     },
     {
       "id": 3,
       "userId": 1,
-      "statement": "this is the third notice"
+      "post": "this is the third notice"
     }
   ]
 }

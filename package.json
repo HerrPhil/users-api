@@ -12,6 +12,7 @@
   "dependencies": {
     "express": "^4.20.0",
     "json-server": "^0.17.4",
-    "json-server-auth": "^2.1.0"
+    "json-server-auth": "^2.1.0",
+    "jsonwebtoken": "^9.0.3"
   }
 }

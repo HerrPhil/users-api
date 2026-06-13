@@ -32,67 +32,67 @@
   "permissions": [
     {
       "id": 1,
-      "level": "create user",
+      "task": "create user",
       "userId": 1
     },
     { 
       "id": 2,
-      "level": "delete user",
+      "task": "delete user",
       "userId": 1
     },
     { 
       "id": 3,
-      "level": "create permission",
+      "task": "create permission",
       "userId": 1
     },
     {
       "id": 4,
-      "level": "delete permission",
+      "task": "delete permission",
       "userId": 1
     },
     {
       "id": 5,
-      "level": "create role",
+      "task": "create role",
       "userId": 1
     },
     { 
       "id": 6,
-      "level": "assign role",
+      "task": "assign role",
       "userId": 1
     },
     {      
       "id": 7,
-      "level": "revoke role",
+      "task": "revoke role",
       "userId": 1
     },
     { 
       "id": 8,
-      "level": "delete role",
+      "task": "delete role",
       "userId": 1
     },
     {
       "id": 9,
-      "level": "write code",
+      "task": "write code",
       "userId": 1
     },
     {
       "id": 10,
-      "level": "test code",
+      "task": "test code",
       "userId": 1
     },
     { 
       "id": 11,
-      "level": "review code",
+      "task": "review code",
       "userId": 1
     },
     { 
       "id": 12,
-      "level": "deploy code",
+      "task": "deploy code",
       "userId": 1
     },
     {
       "id": 13,
-      "level": "certify build",
+      "task": "certify build",
       "userId": 1
     }
   ],
